@@ -1,0 +1,12 @@
+Collecting cryptography
+  Using cached cryptography-44.0.0-cp39-abi3-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+Collecting cffi>=1.12 (from cryptography)
+  Downloading cffi-1.17.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.12->cryptography)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading cryptography-44.0.0-cp39-abi3-manylinux_2_28_x86_64.whl (4.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 143.2 kB/s eta 0:00:00
+Downloading cffi-1.17.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (479 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pycparser, cffi, cryptography
+Successfully installed cffi-1.17.1 cryptography-44.0.0 pycparser-2.22

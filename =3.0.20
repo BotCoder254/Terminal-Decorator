@@ -1,0 +1,2 @@
+Requirement already satisfied: prompt-toolkit in ./env/lib/python3.13/site-packages (3.0.36)
+Requirement already satisfied: wcwidth in ./env/lib/python3.13/site-packages (from prompt-toolkit) (0.2.13)

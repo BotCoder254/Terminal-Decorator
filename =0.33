@@ -1,0 +1,6 @@
+Collecting python-xlib
+  Using cached python_xlib-0.33-py2.py3-none-any.whl.metadata (6.2 kB)
+Requirement already satisfied: six>=1.10.0 in ./env/lib/python3.13/site-packages (from python-xlib) (1.17.0)
+Downloading python_xlib-0.33-py2.py3-none-any.whl (182 kB)
+Installing collected packages: python-xlib
+Successfully installed python-xlib-0.33

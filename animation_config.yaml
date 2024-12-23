@@ -1,0 +1,288 @@
+# Animation Configuration
+
+# Global Settings
+global:
+  enabled: true
+  default_speed: 0.05
+  default_style: "default"
+  default_color: "cyan"
+  smooth_transitions: true
+  hardware_acceleration: true
+  fps: 60
+
+# Accessibility Settings
+accessibility:
+  high_contrast_mode: false
+  reduced_motion: false
+  screen_reader_friendly: true
+  keyboard_navigation: true
+  font_settings:
+    base_size: 14
+    min_size: 8
+    max_size: 32
+    size_increment: 2
+    allow_custom_fonts: true
+    default_font: "monospace"
+  
+  color_schemes:
+    high_contrast_light:
+      background: "#FFFFFF"
+      foreground: "#000000"
+      accent: "#0000FF"
+      success: "#006400"
+      error: "#8B0000"
+      warning: "#804000"
+    
+    high_contrast_dark:
+      background: "#000000"
+      foreground: "#FFFFFF"
+      accent: "#00FFFF"
+      success: "#00FF00"
+      error: "#FF0000"
+      warning: "#FFD700"
+    
+    deuteranopia:
+      background: "#FFFFFF"
+      foreground: "#000000"
+      accent: "#0000FF"
+      success: "#000080"
+      error: "#800000"
+      warning: "#808000"
+    
+    protanopia:
+      background: "#FFFFFF"
+      foreground: "#000000"
+      accent: "#0000FF"
+      success: "#000080"
+      error: "#800000"
+      warning: "#808000"
+    
+    tritanopia:
+      background: "#FFFFFF"
+      foreground: "#000000"
+      accent: "#800080"
+      success: "#008000"
+      error: "#800000"
+      warning: "#000080"
+
+  screen_reader:
+    announcements: true
+    verbose_mode: false
+    description_mode: "brief"
+    progress_announcements: true
+    status_announcements: true
+
+  keyboard_shortcuts:
+    toggle_high_contrast: "ctrl+shift+h"
+    increase_font: "ctrl+plus"
+    decrease_font: "ctrl+minus"
+    reset_font: "ctrl+0"
+    toggle_motion: "ctrl+shift+m"
+    toggle_announcements: "ctrl+shift+a"
+    navigation_keys:
+      up: "up"
+      down: "down"
+      select: "enter"
+      back: "esc"
+      menu: "ctrl+m"
+
+# Spinner Styles
+spinners:
+  styles:
+    dots: ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
+    line: ['|', '/', '-', '\\']
+    pulse: ['█', '▓', '▒', '░', '▒', '▓']
+    bounce: ['⠁', '⠂', '⠄', '⡀', '⢀', '⠠', '⠐', '⠈']
+    stars: ['✶', '✸', '✹', '✺', '✹', '✷']
+    clock: ['🕐', '🕑', '🕒', '🕓', '🕔', '🕕', '🕖', '🕗', '🕘', '🕙', '🕚', '🕛']
+    moon: ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘']
+    hearts: ['💗', '💓', '💖', '💘', '💝', '💖', '💓']
+    arrows: ['←', '↖', '↑', '↗', '→', '↘', '↓', '↙']
+    dots_bounce: ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']
+    accessible_dots: ["⠏", "⠛", "⠹", "⠼", "⠶", "⠧"]
+    accessible_line: ["─", "\\", "│", "/"]
+  
+  settings:
+    speed: 0.1
+    color_cycle: true
+    colors: ["cyan", "magenta", "blue", "green"]
+    fade: true
+    bounce: true
+    respect_reduced_motion: true
+    high_contrast_colors: ["white", "black", "blue", "yellow"]
+
+# Progress Bar Styles
+progress_bars:
+  styles:
+    default:
+      complete_style: "green"
+      finished_style: "bold green"
+      pulse: true
+      char_complete: "█"
+      char_remaining: "░"
+    
+    rainbow:
+      complete_style: "red yellow green blue magenta"
+      finished_style: "bold cyan"
+      pulse: true
+      char_complete: "█"
+      char_remaining: "░"
+    
+    neon:
+      complete_style: "bright_green on black"
+      finished_style: "bold bright_green"
+      pulse: true
+      char_complete: "▰"
+      char_remaining: "▱"
+    
+    minimal:
+      complete_style: "white"
+      finished_style: "bold white"
+      pulse: false
+      char_complete: "━"
+      char_remaining: "─"
+    
+    high_contrast:
+      complete_style: "bold white on black"
+      finished_style: "bold black on white"
+      pulse: false
+      char_complete: "█"
+      char_remaining: "░"
+      screen_reader_text: "Progress: {percentage}% complete"
+    
+    accessible:
+      complete_style: "bold yellow on blue"
+      finished_style: "bold blue on yellow"
+      pulse: false
+      char_complete: "="
+      char_remaining: "-"
+      screen_reader_text: "Progress: {percentage}% complete, {remaining} remaining"
+  
+  settings:
+    show_percentage: true
+    show_time_remaining: true
+    show_speed: true
+    smooth_update: true
+    animation_ms: 16
+
+# Text Effects
+text_effects:
+  typing:
+    speed: 0.05
+    cursor: "▌"
+    cursor_blink: true
+    sound: false
+  
+  marquee:
+    width: 40
+    padding: 2
+    speed: 0.1
+    bounce: true
+    smooth_scroll: true
+  
+  pulse:
+    speed: 0.5
+    colors: ["cyan", "blue", "magenta"]
+    fade: true
+    intensity: 0.8
+  
+  fade:
+    frames: 30
+    duration: 1.0
+    easing: "ease_in_out"
+  
+  screen_reader:
+    enabled: true
+    speed: 1.0
+    volume: 0.8
+    pitch: 1.0
+    voice: "default"
+
+# Event-Based Animations
+events:
+  command_start:
+    type: "spinner"
+    style: "dots"
+    text: "Executing command..."
+  
+  command_success:
+    type: "fade"
+    start_color: "#00FF00"
+    end_color: "#004400"
+    text: "Command completed successfully"
+  
+  command_error:
+    type: "pulse"
+    colors: ["red", "bright_red"]
+    text: "Error occurred"
+  
+  directory_change:
+    type: "typing"
+    text: "Changed to {directory}"
+    speed: 0.03
+  
+  file_operation:
+    type: "progress"
+    style: "rainbow"
+    show_bytes: true
+    show_speed: true
+
+# Status Indicators
+status_indicators:
+  styles:
+    success: "✓"
+    error: "✗"
+    warning: "⚠"
+    info: "ℹ"
+    loading: "⋮"
+    pending: "○"
+    complete: "●"
+    high_contrast_success: "✓ "
+    high_contrast_error: "✗ "
+    high_contrast_warning: "! "
+    high_contrast_info: "i "
+  
+  animations:
+    loading:
+      type: "spinner"
+      style: "dots"
+      color: "yellow"
+    
+    success:
+      type: "fade"
+      start_color: "#00FF00"
+      end_color: "#004400"
+    
+    error:
+      type: "pulse"
+      colors: ["red", "bright_red"]
+    
+    warning:
+      type: "blink"
+      color: "yellow"
+      speed: 0.5
+
+# Easing Functions
+easing:
+  functions:
+    linear: "x"
+    ease_in: "x * x"
+    ease_out: "1 - (1 - x) * (1 - x)"
+    ease_in_out: "x < 0.5 ? 2 * x * x : 1 - pow(-2 * x + 2, 2) / 2"
+    bounce: "1 - (pow(1 - x, 2) * (1 + 2 * x))"
+  
+  defaults:
+    progress: "ease_out"
+    fade: "ease_in_out"
+    typing: "linear"
+    pulse: "sine"
+
+# Performance Settings
+performance:
+  throttle_animations: true
+  max_concurrent: 5
+  reduce_animations_on_battery: true
+  minimum_frame_time: 16.67  # 60 FPS
+  buffer_size: 1024
+  vsync: true
+  gpu_acceleration: true 

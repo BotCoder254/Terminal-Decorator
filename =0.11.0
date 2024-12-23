@@ -1,0 +1,16 @@
+Collecting netifaces
+  Using cached netifaces-0.11.0.tar.gz (30 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: netifaces
+  Building wheel for netifaces (pyproject.toml): started
+  Building wheel for netifaces (pyproject.toml): finished with status 'done'
+  Created wheel for netifaces: filename=netifaces-0.11.0-cp313-cp313-linux_x86_64.whl size=36933 sha256=a014d8f58b487e8e12fc3d80029787c23bce8eb536ecac25ee5cf2e87486ea74
+  Stored in directory: /home/teum/.cache/pip/wheels/b6/30/e2/f47e3db48aecfc634b24146b62f520b4419b0bd90ef9ed1760
+Successfully built netifaces
+Installing collected packages: netifaces
+Successfully installed netifaces-0.11.0

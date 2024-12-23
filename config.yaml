@@ -1,0 +1,200 @@
+username: "developer"
+use_ascii: false  # Set to true for ASCII-only mode
+use_emoji: true   # Set to false to disable emoji support
+
+colors:
+  # Basic UI colors
+  prompt: "bright_cyan"
+  path: "bright_green"
+  username: "bright_blue"
+  separator: "bright_red"
+  title: "bright_magenta"
+  subtitle: "bright_cyan"
+  
+  # Status colors
+  success: "bright_green"
+  error: "bright_red"
+  warning: "bright_yellow"
+  info: "bright_blue"
+  
+  # UI element colors
+  border: "blue"
+  panel_title: "magenta"
+  table_header: "cyan"
+  progress_bar: "green"
+  link: "bright_blue"
+  muted: "bright_black"
+  
+  # Syntax highlighting
+  code:
+    keyword: "bright_magenta"
+    string: "bright_green"
+    number: "bright_yellow"
+    comment: "bright_black"
+    function: "bright_blue"
+    class: "bright_cyan"
+    
+  # Git colors
+  git:
+    branch: "bright_magenta"
+    added: "bright_green"
+    modified: "bright_yellow"
+    deleted: "bright_red"
+    renamed: "bright_blue"
+    untracked: "bright_cyan"
+
+symbols:
+  # Basic indicators
+  separator: "➜"
+  git_branch: "⎇"
+  success: "✓"
+  error: "✗"
+  warning: "⚠"
+  info: "ℹ"
+  
+  # File system icons
+  folder: "📁"
+  file: "📄"
+  home: "🏠"
+  link: "🔗"
+  
+  # Git status icons
+  git_added: "✚"
+  git_modified: "✱"
+  git_deleted: "✖"
+  git_renamed: "➜"
+  git_untracked: "?"
+  
+  # System status icons
+  cpu: "🔲"
+  memory: "📊"
+  disk: "💾"
+  network: "🌐"
+  battery: "🔋"
+  
+  # Time and progress
+  clock: "🕐"
+  loading: "⋮"
+  progress: "▮"
+  spinner: "◐◓◑◒"
+  
+  # User interface
+  user: "👤"
+  check: "☑"
+  cross: "☒"
+  bullet: "•"
+  
+  # Arrows and controls
+  arrow_right: "→"
+  arrow_left: "←"
+  arrow_up: "↑"
+  arrow_down: "↓"
+  
+  # Decorative
+  star: "★"
+  heart: "❤"
+  music: "♪"
+  sun: "☀"
+  cloud: "☁"
+
+animations:
+  enabled: true
+  speed: 0.05  # Lower is faster
+  spinner_type: "dots"  # Options: dots, line, pipe, arrow
+  typing_effect: true
+  progress_bar_style: "blocks"  # Options: blocks, ascii, dots
+  smooth_scroll: true
+
+style:
+  border: "rounded"  # Options: ascii, rounded, double, bold
+  padding: [1, 2]  # [vertical, horizontal]
+  margin: [0, 1]  # [vertical, horizontal]
+  alignment: "left"  # Options: left, center, right
+  line_numbers: true
+  wrap_text: true
+  truncate_length: 120
+
+fonts:
+  banner: "slant"  # Options: slant, block, banner, standard
+  ascii_art: true
+  banner_color: "bright_magenta"
+  font_effects:
+    bold: true
+    italic: true
+    underline: true
+
+themes:
+  current: "dark"
+  custom:
+    dark:
+      background: "black"
+      foreground: "white"
+      accent: "blue"
+      links: "cyan"
+      borders: "bright_black"
+      highlights: "bright_blue"
+    
+    light:
+      background: "white"
+      foreground: "black"
+      accent: "blue"
+      links: "bright_blue"
+      borders: "bright_black"
+      highlights: "blue"
+    
+    matrix:
+      background: "black"
+      foreground: "bright_green"
+      accent: "green"
+      links: "bright_green"
+      borders: "green"
+      highlights: "bright_green"
+    
+    ocean:
+      background: "navy"
+      foreground: "cyan"
+      accent: "bright_blue"
+      links: "bright_cyan"
+      borders: "blue"
+      highlights: "bright_cyan"
+    
+    monokai:
+      background: "black"
+      foreground: "bright_white"
+      accent: "bright_magenta"
+      links: "bright_cyan"
+      borders: "bright_black"
+      highlights: "bright_yellow"
+
+terminal_effects:
+  cursor_style: "block"  # Options: block, underscore, line
+  cursor_blink: true
+  smooth_scrolling: true
+  transparency: 0.95  # 0.0 to 1.0
+  blur: 5  # 0 to disable
+  window_effects:
+    shadow: true
+    rounded_corners: true
+    
+keyboard_shortcuts:
+  enabled: true
+  custom_bindings:
+    clear: "ctrl+l"
+    copy: "ctrl+shift+c"
+    paste: "ctrl+shift+v"
+    search: "ctrl+shift+f"
+    theme_switch: "ctrl+t"
+
+notifications:
+  enabled: true
+  position: "top-right"  # Options: top-right, top-left, bottom-right, bottom-left
+  timeout: 5  # seconds
+  sound: true
+  icons: true
+
+performance:
+  cache_enabled: true
+  cache_size: 1000
+  throttle_animations: true
+  lazy_loading: true
+ 

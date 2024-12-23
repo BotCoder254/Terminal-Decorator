@@ -1,0 +1,6 @@
+Collecting numpy
+  Using cached numpy-2.2.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Downloading numpy-2.2.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.1/16.1 MB 2.0 MB/s eta 0:00:00
+Installing collected packages: numpy
+Successfully installed numpy-2.2.1

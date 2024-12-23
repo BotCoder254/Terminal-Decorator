@@ -1,0 +1,213 @@
+# Text and Icon Configuration
+
+# Font Collections
+fonts:
+  collections:
+    modern:
+      - slant
+      - banner3-D
+      - larry3d
+      - colossal
+    clean:
+      - standard
+      - thin
+      - small
+      - mini
+    decorative:
+      - block
+      - cosmic
+      - roman
+      - broadway
+    tech:
+      - cyberlarge
+      - cybermedium
+      - digital
+  
+  styles:
+    header:
+      name: modern
+      bold: true
+      italic: false
+      underline: false
+    subheader:
+      name: clean
+      bold: false
+      italic: true
+      underline: false
+    emphasis:
+      name: standard
+      bold: true
+      italic: false
+      underline: true
+    code:
+      name: monospace
+      bold: false
+      italic: false
+      dim: true
+    alert:
+      name: standard
+      bold: true
+      blink: true
+    success:
+      name: standard
+      bold: true
+      color: bright_green
+    error:
+      name: standard
+      bold: true
+      reverse: true
+      color: bright_red
+
+# Icon Sets
+icons:
+  status:
+    success: "✓"
+    error: "✗"
+    warning: "⚠"
+    info: "ℹ"
+    loading: "⋮"
+    pending: "○"
+    complete: "●"
+  
+  files:
+    folder: "📁"
+    file: "📄"
+    home: "🏠"
+    link: "🔗"
+    config: "⚙"
+    script: "📜"
+    image: "🖼"
+    video: "🎥"
+    audio: "🎵"
+  
+  git:
+    branch: "⎇"
+    added: "✚"
+    modified: "✱"
+    deleted: "✖"
+    renamed: "➜"
+    untracked: "?"
+    stashed: "📦"
+    ahead: "↑"
+    behind: "↓"
+  
+  system:
+    cpu: "🔲"
+    memory: "📊"
+    disk: "💾"
+    network: "🌐"
+    battery: "🔋"
+    temperature: "🌡"
+    clock: "🕐"
+    calendar: "📅"
+  
+  user:
+    user: "👤"
+    root: "👑"
+    group: "👥"
+    terminal: "💻"
+    shell: "🐚"
+    power: "⚡"
+  
+  arrows:
+    right: "→"
+    left: "←"
+    up: "↑"
+    down: "↓"
+    return: "↵"
+    enter: "⏎"
+    tab: "⇥"
+  
+  decorative:
+    star: "★"
+    heart: "❤"
+    flag: "🚩"
+    bookmark: "🔖"
+    pin: "📌"
+    bell: "🔔"
+    gear: "⚙"
+
+# Banner Templates
+banners:
+  welcome:
+    - "Welcome to {name}'s Terminal"
+    - "Terminal Session - {name}"
+    - "{name}'s Development Environment"
+    - "Welcome Back, {name}!"
+    - "Terminal Pro - {name}'s Workspace"
+  
+  motivational:
+    - "Code with Purpose"
+    - "Build Something Amazing"
+    - "Create • Develop • Deploy"
+    - "Think • Code • Innovate"
+    - "Debug like a Detective"
+    - "Code with Excellence"
+    - "Craft Quality Code"
+    - "Design • Build • Ship"
+  
+  status:
+    - "System Status: Optimal"
+    - "All Systems Operational"
+    - "Environment Ready"
+    - "Development Mode Active"
+    - "Terminal Pro Ready"
+    - "Workspace Initialized"
+
+# Dynamic Prompt Components
+prompt:
+  components:
+    username:
+      text: "{username}"
+      style: "emphasis"
+      icon: ":user:"
+    
+    directory:
+      text: "{pwd}"
+      style: "code"
+      icon: ":folder:"
+    
+    git:
+      text: "{branch}"
+      style: "success"
+      icon: ":branch:"
+    
+    time:
+      text: "{time}"
+      style: "muted"
+      icon: ":clock:"
+    
+    status:
+      text: "{exit_code}"
+      style: "standard"
+      icon: "{status_icon}"
+  
+  layouts:
+    default:
+      - username
+      - directory
+      - git
+      - status
+    
+    minimal:
+      - directory
+      - git
+    
+    full:
+      - username
+      - directory
+      - git
+      - time
+      - status
+
+# ASCII Art Settings
+ascii_art:
+  enabled: true
+  default_font: slant
+  default_width: 80
+  animations: true
+  colors: true
+  styles:
+    border: rounded
+    padding: [1, 2]
+    alignment: center 

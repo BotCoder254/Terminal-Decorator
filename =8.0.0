@@ -1,0 +1,5 @@
+Collecting py-cpuinfo
+  Using cached py_cpuinfo-9.0.0-py3-none-any.whl.metadata (794 bytes)
+Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+Installing collected packages: py-cpuinfo
+Successfully installed py-cpuinfo-9.0.0

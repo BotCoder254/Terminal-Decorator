@@ -1,0 +1,9 @@
+Collecting blessed
+  Using cached blessed-1.20.0-py2.py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: wcwidth>=0.1.4 in ./env/lib/python3.13/site-packages (from blessed) (0.2.13)
+Collecting six>=1.9.0 (from blessed)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading blessed-1.20.0-py2.py3-none-any.whl (58 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, blessed
+Successfully installed blessed-1.20.0 six-1.17.0

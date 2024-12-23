@@ -1,0 +1,14 @@
+Collecting rich
+  Using cached rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich)
+  Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich)
+  Using cached pygments-2.18.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Using cached rich-13.9.4-py3-none-any.whl (242 kB)
+Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Using cached pygments-2.18.0-py3-none-any.whl (1.2 MB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+Successfully installed markdown-it-py-3.0.0 mdurl-0.1.2 pygments-2.18.0 rich-13.9.4

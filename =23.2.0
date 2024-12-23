@@ -1,0 +1,8 @@
+Collecting pyOpenSSL
+  Using cached pyOpenSSL-24.3.0-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: cryptography<45,>=41.0.5 in ./env/lib/python3.13/site-packages (from pyOpenSSL) (44.0.0)
+Requirement already satisfied: cffi>=1.12 in ./env/lib/python3.13/site-packages (from cryptography<45,>=41.0.5->pyOpenSSL) (1.17.1)
+Requirement already satisfied: pycparser in ./env/lib/python3.13/site-packages (from cffi>=1.12->cryptography<45,>=41.0.5->pyOpenSSL) (2.22)
+Downloading pyOpenSSL-24.3.0-py3-none-any.whl (56 kB)
+Installing collected packages: pyOpenSSL
+Successfully installed pyOpenSSL-24.3.0
